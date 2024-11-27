@@ -5,4 +5,6 @@
 - Fully implement mobile compatibility
 - Fix existing bugs
 - Implement Premium User feature
+- Implement 'Tips & Tricks' tab for exam/study advice
+- Add complex unfamiliar problembase
 - Add all problems
