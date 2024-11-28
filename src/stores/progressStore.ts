@@ -46,7 +46,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
         .from('test_results')
         .insert({
           user_id: user.id,
-          title: result.title || `Test ${new Date().toLocaleDateString()}`,
+          title: result.title || 'New Test',
           total_marks: result.total_marks,
           max_marks: result.max_marks,
           completed_at: result.completed_at || new Date().toISOString(),
