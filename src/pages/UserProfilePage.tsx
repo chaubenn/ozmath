@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, UserMinus } from 'lucide-react';
+import { ArrowLeft, UserMinus, ClipboardList } from 'lucide-react';
 import { useAuthStore } from '../stores/authStore';
 import { supabase } from '../lib/supabase';
 import TopBar from '../components/TopBar';
@@ -16,6 +16,23 @@ interface UserProfile {
   username: string | null;
   test_count?: number;
 }
+
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  });
+};
+
+const formatTime = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleTimeString('en-GB', {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+};
 
 export default function UserProfilePage() {
   const { userId } = useParams();
@@ -130,16 +147,7 @@ export default function UserProfilePage() {
       <div className="min-h-screen">
         <TopBar 
           currentPage="social"
-          onNavigate={(page) => {
-            if (page === 'social') {
-              return;
-            }
-            if (page === 'problems') {
-              navigate('/methods');
-            } else {
-              navigate(`/methods/${page}`);
-            }
-          }}
+          onNavigate={(page) => navigate(`/methods/${page}`)}
           selectedTags={new Set()}
           onTagSelect={() => {}}
           searchQuery=""
@@ -150,26 +158,26 @@ export default function UserProfilePage() {
           onLogoClick={() => {}}
         />
         <main className="pt-24 px-8 pb-12">
-          <div className="max-w-7xl mx-auto">
-            <div className="max-w-4xl mx-auto">
-              <div className="h-8 w-24 mb-6 bg-gray-200 dark:bg-gray-700 animate-pulse rounded" />
+          <div className="max-w-4xl mx-auto">
+            <div className="animate-pulse space-y-6">
+              <div className="h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded" />
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
                 <div className="flex justify-between items-center mb-6">
-                  <div>
-                    <div className="h-8 w-48 bg-gray-200 dark:bg-gray-700 animate-pulse rounded mb-2" />
-                    <div className="h-4 w-24 bg-gray-200 dark:bg-gray-700 animate-pulse rounded" />
+                  <div className="space-y-2">
+                    <div className="h-8 w-48 bg-gray-200 dark:bg-gray-700 rounded" />
+                    <div className="h-4 w-24 bg-gray-200 dark:bg-gray-700 rounded" />
                   </div>
-                  <div className="h-10 w-32 bg-gray-200 dark:bg-gray-700 animate-pulse rounded" />
+                  <div className="h-10 w-32 bg-gray-200 dark:bg-gray-700 rounded" />
                 </div>
                 <div className="space-y-4">
                   {[1, 2, 3].map((i) => (
                     <div key={i} className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4">
                       <div className="flex justify-between items-center">
                         <div className="space-y-2">
-                          <div className="h-5 w-40 bg-gray-200 dark:bg-gray-600 animate-pulse rounded" />
-                          <div className="h-4 w-32 bg-gray-200 dark:bg-gray-600 animate-pulse rounded" />
+                          <div className="h-5 w-40 bg-gray-200 dark:bg-gray-600 rounded" />
+                          <div className="h-4 w-32 bg-gray-200 dark:bg-gray-600 rounded" />
                         </div>
-                        <div className="h-10 w-24 bg-gray-200 dark:bg-gray-600 animate-pulse rounded" />
+                        <div className="h-10 w-24 bg-gray-200 dark:bg-gray-600 rounded" />
                       </div>
                     </div>
                   ))}
@@ -208,21 +216,54 @@ export default function UserProfilePage() {
     );
   }
 
+  if (!testResults.length) {
+    return (
+      <div className="min-h-screen">
+        <TopBar 
+          currentPage="social"
+          onNavigate={(page) => navigate(`/methods/${page}`)}
+          selectedTags={new Set()}
+          onTagSelect={() => {}}
+          searchQuery=""
+          setSearchQuery={() => {}}
+          filterTags={[]}
+          onRandomProblem={() => {}}
+          onStartTest={() => {}}
+          onLogoClick={() => {}}
+        />
+        <main className="pt-24 px-8 pb-12">
+          <div className="max-w-4xl mx-auto">
+            <button
+              onClick={() => navigate('/social')}
+              className="mb-6 flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span>Back to Social</span>
+            </button>
+
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
+              <div className="flex flex-col items-center gap-4">
+                <ClipboardList className="w-16 h-16 text-gray-400 dark:text-gray-500" />
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  No Tests Completed
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {profile.username} hasn't completed any tests yet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
   if (selectedProblem && selectedTest !== null) {
     return (
       <div className="min-h-screen">
         <TopBar 
           currentPage="social"
-          onNavigate={(page) => {
-            if (page === 'social') {
-              return;
-            }
-            if (page === 'problems') {
-              navigate('/methods');
-            } else {
-              navigate(`/methods/${page}`);
-            }
-          }}
+          onNavigate={(page) => navigate(`/methods/${page}`)}
           selectedTags={new Set()}
           onTagSelect={() => {}}
           searchQuery=""
@@ -239,6 +280,7 @@ export default function UserProfilePage() {
               onBack={handleBackToReview}
               reviewMode={true}
               userAnswer={testResults[selectedTest].answers[selectedProblem.id]}
+              onShowFormulaSheet={() => {}}
             />
           </div>
         </main>
@@ -250,16 +292,7 @@ export default function UserProfilePage() {
     <div className="min-h-screen">
       <TopBar 
         currentPage="social"
-        onNavigate={(page) => {
-          if (page === 'social') {
-            return;
-          }
-          if (page === 'problems') {
-            navigate('/methods');
-          } else {
-            navigate(`/methods/${page}`);
-          }
-        }}
+        onNavigate={(page) => navigate(`/methods/${page}`)}
         selectedTags={new Set()}
         onTagSelect={() => {}}
         searchQuery=""
@@ -304,52 +337,46 @@ export default function UserProfilePage() {
               <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
                 Test History
               </h2>
-              {testResults.length > 0 ? (
-                testResults.map((result, index) => {
-                  const percentage = Math.round((result.total_marks / result.max_marks) * 100);
-                  const date = new Date(result.completed_at).toLocaleDateString();
-                  const time = new Date(result.completed_at).toLocaleTimeString();
-                  
-                  return (
-                    <div
-                      key={result.id}
-                      className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4"
-                    >
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <h3 className="text-lg font-medium text-gray-800 dark:text-white">
-                            {result.title || `Test ${date}`}
-                          </h3>
-                          <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
-                            {date} at {time}
-                          </p>
-                          <p className="text-sm text-gray-600 dark:text-gray-400">
-                            Score: {result.total_marks}/{result.max_marks}
-                          </p>
+              {testResults.map((result, index) => {
+                const percentage = Math.round((result.total_marks / result.max_marks) * 100);
+                const date = formatDate(result.completed_at);
+                const time = formatTime(result.completed_at);
+                
+                return (
+                  <div
+                    key={result.id}
+                    className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4"
+                  >
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <h3 className="text-lg font-medium text-gray-800 dark:text-white">
+                          {result.title || `Test ${date}`}
+                        </h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+                          {date} at {time}
+                        </p>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          Score: {result.total_marks}/{result.max_marks}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-4">
+                        <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                          {percentage}%
                         </div>
-                        <div className="flex items-center gap-4">
-                          <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-                            {percentage}%
-                          </div>
-                          <button
-                            onClick={() => {
-                              setSelectedTest(index);
-                              setShowTestReview(true);
-                            }}
-                            className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
-                          >
-                            View
-                          </button>
-                        </div>
+                        <button
+                          onClick={() => {
+                            setSelectedTest(index);
+                            setShowTestReview(true);
+                          }}
+                          className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                        >
+                          View
+                        </button>
                       </div>
                     </div>
-                  );
-                })
-              ) : (
-                <p className="text-center text-gray-600 dark:text-gray-400">
-                  No tests completed yet
-                </p>
-              )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
