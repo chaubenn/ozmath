@@ -6,11 +6,28 @@ import TestReview from '../components/TestReview';
 import ProblemView from '../components/ProblemView';
 import DeleteConfirmModal from '../components/DeleteConfirmModal';
 import ResultsPlaceholder from '../components/ResultsPlaceholder';
-import { Pencil1Icon, TrashIcon } from '@radix-ui/react-icons';
+import { Pencil, Trash2 } from 'lucide-react';
 import type { Database } from '../types/supabase';
 
 type TestResult = Database['public']['Tables']['test_results']['Row'];
 type Problem = TestResult['problems'][number];
+
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  });
+};
+
+const formatTime = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleTimeString('en-GB', {
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+};
 
 const TestResultsPage: React.FC = () => {
   const { user } = useAuthStore();
@@ -50,7 +67,10 @@ const TestResultsPage: React.FC = () => {
     setNewTitle(currentTitle || '');
   };
 
-  const handleTitleSubmit = async (id: string) => {
+  const handleTitleSubmit = async (e: React.FormEvent, id: string) => {
+    e.preventDefault();
+    if (!newTitle.trim()) return;
+    
     try {
       await updateTestTitle(id, newTitle);
       setEditingTitle(null);
@@ -114,8 +134,8 @@ const TestResultsPage: React.FC = () => {
         <div className="space-y-4">
           {testResults.map((result: TestResult, index) => {
             const percentage = Math.round((result.total_marks / result.max_marks) * 100);
-            const date = new Date(result.completed_at).toLocaleDateString();
-            const time = new Date(result.completed_at).toLocaleTimeString();
+            const date = formatDate(result.completed_at);
+            const time = formatTime(result.completed_at);
             
             return (
               <div
@@ -126,22 +146,20 @@ const TestResultsPage: React.FC = () => {
                   <div className="flex-grow">
                     {editingTitle === result.id ? (
                       <form
-                        onSubmit={(e) => {
-                          e.preventDefault();
-                          handleTitleSubmit(result.id);
-                        }}
-                        className="flex items-center gap-2"
+                        onSubmit={(e) => handleTitleSubmit(e, result.id)}
+                        className="flex items-center gap-2 max-w-md"
                       >
                         <input
                           type="text"
                           value={newTitle}
                           onChange={(e) => setNewTitle(e.target.value)}
-                          className="px-2 py-1 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                          className="flex-grow px-2 py-1 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white text-base"
+                          placeholder="Enter test title"
                           autoFocus
                         />
                         <button
                           type="submit"
-                          className="text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300"
+                          className="text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium"
                         >
                           Save
                         </button>
@@ -156,14 +174,14 @@ const TestResultsPage: React.FC = () => {
                     ) : (
                       <div className="flex items-center gap-2">
                         <h3 className="text-gray-800 dark:text-white font-medium">
-                          {result.title || `Test ${date}`}
+                          {result.title || `New Test`}
                         </h3>
                         <button
                           onClick={() => handleStartTitleEdit(result.id, result.title)}
                           className="text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400"
                           title="Rename test"
                         >
-                          <Pencil1Icon className="w-4 h-4" />
+                          <Pencil className="w-4 h-4" />
                         </button>
                       </div>
                     )}
@@ -191,12 +209,12 @@ const TestResultsPage: React.FC = () => {
                       <button
                         onClick={() => setDeleteConfirm({
                           id: result.id,
-                          title: result.title || `Test ${date}`
+                          title: result.title || `New Test`
                         })}
                         className="p-1 text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300"
                         title="Delete test"
                       >
-                        <TrashIcon className="w-4 h-4" />
+                        <Trash2 className="w-4 h-4" />
                       </button>
                     </div>
                   </div>
