@@ -3,6 +3,9 @@
 All notable changes to OzMath will be documented in this file.
 
 ### Changes
+01/01/2025 - 27/01/2025:
+- Mobile compatibility finalised
+  
 28/11/24:
 - Made public repository without .env or /public for safety
 - Fixed redirects, refreshing bugs
