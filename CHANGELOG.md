@@ -4,7 +4,9 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 01/01/2025 - 27/01/2025:
-- Mobile compatibility finalised
+- Mobile compatibility finalised:
+     - sliders added to problem and answer descriptions
+     - test review problem description hidden on smaller devices (hidden md:block) 
   
 28/11/24:
 - Made public repository without .env or /public for safety
