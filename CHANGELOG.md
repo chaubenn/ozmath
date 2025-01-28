@@ -3,6 +3,9 @@
 All notable changes to OzMath will be documented in this file.
 
 ### Changes
+28/01/2025:
+- Landing page improved, mockups designed
+
 01/01/2025 - 27/01/2025:
 - Mobile compatibility finalised:
      - sliders added to problem and answer descriptions
