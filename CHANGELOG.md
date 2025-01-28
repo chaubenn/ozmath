@@ -19,4 +19,6 @@ All notable changes to OzMath will be documented in this file.
 ### Known Bugs 
 - Test does not save unless 'Return to problems' is clicked
 - Video solution not available for viewing past tests from user or friends
+- Back arrow in tests instantly ends test
+- Video solutions do not play on chrome on dekstops, laptops. 
 
