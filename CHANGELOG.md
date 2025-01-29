@@ -3,6 +3,13 @@
 All notable changes to OzMath will be documented in this file.
 
 ### Changes
+29/01/2025:
+- Stripe integrated, premium features:
+     - themes
+     - crown icons in social and header
+     - rate limit increase
+- Bug fixes 
+
 28/01/2025:
 - Landing page improved, mockups designed
 
