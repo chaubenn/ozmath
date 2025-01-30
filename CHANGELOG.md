@@ -6,6 +6,7 @@ All notable changes to OzMath will be documented in this file.
 30/01/2025:
 - Added API requests tracker in user settings modal
 - Updated & automated count resetter for 12AM AEST daily, instead of hourly.
+- Added Premium Hub tab for premium users 
 - Adding more problems to the problembase
   
 29/01/2025:
