@@ -6,7 +6,8 @@ All notable changes to OzMath will be documented in this file.
 
 31/01/2025:
 - Finalised QCAA 2023 problems to problembase
-- 
+- Added donation button in about page
+  
 30/01/2025:
 - Added API requests tracker in user settings modal
 - Updated & automated count resetter for 12AM AEST daily, instead of hourly.
