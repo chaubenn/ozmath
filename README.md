@@ -59,10 +59,6 @@ OzMath is a modern web application designed to help Queensland students practice
 
 [View full changelog](CHANGELOG.md)
 
-## Roadmap
-
-[View full roadmap](TODO.md)
-
 
 ## Contact
 
