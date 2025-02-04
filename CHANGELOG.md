@@ -4,6 +4,10 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+01/02/2025 - 04/02/2025:
+- Troubleshooting/refactoring components
+- Revamping text editor space, implementing MathQuill
+  
 31/01/2025:
 - Finalised QCAA 2023 problems to problembase
 - Added donation button in about page
