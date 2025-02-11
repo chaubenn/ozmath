@@ -2,9 +2,12 @@
 
 All notable changes to OzMath will be documented in this file.
 
+# To be integrated:
+- Corca.app in written responses once the application becomes open source. 
+
 ### Changes
 
-01/02/2025 - 04/02/2025:
+01/02/2025 - 11/02/2025:
 - Troubleshooting/refactoring components
 - Revamping text editor space, implementing MathQuill
   
