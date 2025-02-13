@@ -3,7 +3,8 @@
 All notable changes to OzMath will be documented in this file.
 
 # To be integrated:
-- Corca.app in written responses once the application becomes open source. 
+- Corca.app in written responses once the application becomes open source.
+- Voice-to-text and drawing-to-text in written responses
 
 ### Changes
 
