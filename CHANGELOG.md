@@ -11,7 +11,7 @@ All notable changes to OzMath will be documented in this file.
 18/02/2025:
 - changed font and fixed text editor spacing issues
 - add css transitions to mobile tab dropdown and landingpage-to-problems
-- general reformatting; making buttons uniform, cleaning up UI
+- general reformatting; making buttons uniform, cleaning up UI, compacting topbar
   
 01/02/2025 - 17/02/2025:
 - Troubleshooting/refactoring components
