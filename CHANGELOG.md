@@ -8,6 +8,11 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+19/02/2025:
+- added css transitions to first page loads and refreshing
+- improved initial mockup rendering
+- updated github readme
+
 18/02/2025:
 - changed font and fixed text editor spacing issues
 - add css transitions to mobile tab dropdown and landingpage-to-problems
