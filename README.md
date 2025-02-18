@@ -5,7 +5,9 @@ OzMath is a modern web application designed to help Queensland students practice
 ## Features
 
 ### 🎯 Interactive Problem Solving
-![image](https://github.com/user-attachments/assets/bcd6582a-4acf-4bfe-83ab-4c6848d2ab8b)
+![linked1](https://github.com/user-attachments/assets/041d369b-9f4f-46c4-8572-d4dee1c0ac74)
+
+
 
 - Practice problems from past QCAA exams
 - Real-time feedback and detailed solutions
@@ -13,7 +15,8 @@ OzMath is a modern web application designed to help Queensland students practice
 - Technology Active (TA) and Technology Free (TF) questions
 
 ### 📝 Smart Testing System
-![image](https://github.com/user-attachments/assets/47d4bc56-3551-4569-ac28-226b4c1960a5)
+![image](https://github.com/user-attachments/assets/c74c94b7-a1e1-4a60-b620-432397b00968)
+
 
 - Create custom tests based on specific years or topics
 - AI-powered answer evaluation
@@ -21,7 +24,8 @@ OzMath is a modern web application designed to help Queensland students practice
 - Progress tracking over time
 
 ### 🎨 User Experience
-![image](https://github.com/user-attachments/assets/9928a8bf-6df4-40da-a169-383047eca11f)
+![image](https://github.com/user-attachments/assets/29f0924a-a868-48d2-88b0-59db49e7480e)
+
 
 - Clean, modern interface
 - Dark/light mode support
@@ -29,7 +33,8 @@ OzMath is a modern web application designed to help Queensland students practice
 - Mathematical symbols background themes
 
 ### 👥 Social Features
-![image](https://github.com/user-attachments/assets/c16e66f6-5274-42f6-a664-e7e6045f2277)
+![image](https://github.com/user-attachments/assets/c9346e65-312e-48ad-a267-db9c64ec96ce)
+
 
 - Connect with other students
 - Share and compare progress
@@ -37,7 +42,8 @@ OzMath is a modern web application designed to help Queensland students practice
 - Collaborative learning environment
 
 ### 📊 Progress Tracking
-![image](https://github.com/user-attachments/assets/73a8fd62-c051-4807-af30-918703e281de)
+![image](https://github.com/user-attachments/assets/725e4f21-11be-49bf-b275-dff0d522b936)
+
 
 - Detailed test history
 - Performance analytics
@@ -49,7 +55,7 @@ OzMath is a modern web application designed to help Queensland students practice
 - **Frontend**: React, TypeScript, Tailwind CSS
 - **Backend**: Supabase (PostgreSQL)
 - **Authentication**: Supabase Auth
-- **Math Rendering**: KaTeX
+- **Math Rendering**: KaTeX, LaTeX, MathQuill
 - **Video Streaming**: Mux
 - **AI Integration**: OpenAI GPT-4 for answer evaluation
 
