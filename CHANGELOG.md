@@ -8,6 +8,10 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+20/02/2025:
+- tuning OpenAI API to mark more accurately, and award full marks given correct answer without working out
+- adding problems to problembase, fine tuning solutions to all problems
+
 19/02/2025:
 - added css transitions to first page loads and refreshing
 - improved initial mockup rendering
