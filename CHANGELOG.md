@@ -14,6 +14,7 @@ All notable changes to OzMath will be documented in this file.
   
 20/02/2025:
 - tuning OpenAI API to mark more accurately, and award full marks given correct answer without working out
+- redesigning ProblemView
 - adding problems to problembase, fine tuning solutions to all problems
 
 19/02/2025:
