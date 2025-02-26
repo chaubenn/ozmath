@@ -8,6 +8,10 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+24/02/2025-27/02/2025:
+- redesigned problem view, sliding mirror design using DOM 
+- filling in problems, fixed text wrapping
+
 21/02/2025 - 24/02/2025:
 - adding specialist page/questions: test tagging, modals, mobile compatibility
 - filling in more problems
