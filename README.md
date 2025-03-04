@@ -15,7 +15,8 @@ OzMath is a modern web application designed to help Queensland students practice
 - Technology Active (TA) and Technology Free (TF) questions
 
 ### 📝 Smart Testing System
-![image](https://github.com/user-attachments/assets/c74c94b7-a1e1-4a60-b620-432397b00968)
+![image](https://github.com/user-attachments/assets/ce826e16-de66-4249-9282-f2781c458c6a)
+
 
 
 - Create custom tests based on specific years or topics
@@ -24,7 +25,8 @@ OzMath is a modern web application designed to help Queensland students practice
 - Progress tracking over time
 
 ### 🎨 User Experience
-![image](https://github.com/user-attachments/assets/29f0924a-a868-48d2-88b0-59db49e7480e)
+![image](https://github.com/user-attachments/assets/fb87e02c-c812-43bc-ac55-25cb0ac9ddf2)
+
 
 
 - Clean, modern interface
