@@ -8,6 +8,11 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+05/03/2025:
+- adding Google OAuth API so users can sign up/in using their Google account
+
+-- University begins 
+
 24/02/2025-27/02/2025:
 - redesigned problem view, sliding mirror design using DOM 
 - filling in problems, fixed text wrapping
