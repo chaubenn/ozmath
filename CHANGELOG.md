@@ -8,6 +8,9 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+18/03/2025:
+- redesigned authmodal and landingpage
+
 05/03/2025:
 - adding Google OAuth API so users can sign up/in using their Google account
 
