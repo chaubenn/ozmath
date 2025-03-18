@@ -5,7 +5,8 @@ OzMath is a modern web application designed to help Queensland students practice
 ## Features
 
 ### 🎯 Interactive Problem Solving
-![linked1](https://github.com/user-attachments/assets/041d369b-9f4f-46c4-8572-d4dee1c0ac74)
+![image](https://github.com/user-attachments/assets/51d751f1-e9ae-4567-ae06-b8584a2afd65)
+
 
 
 
