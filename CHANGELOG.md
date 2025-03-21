@@ -18,7 +18,7 @@ All notable changes to OzMath will be documented in this file.
 
 - inspired by leetcode
 - fixed back arrow ending test in test mode
-
+- no longer saving tests where the user does not answer at least one problem
 
 
 18/03/2025:
