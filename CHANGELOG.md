@@ -7,6 +7,9 @@ All notable changes to OzMath will be documented in this file.
 - Voice-to-text and drawing-to-text in written responses
 
 ### Changes
+22/03/2025:
+- massive change to home page!
+
 
 18/03/2025:
 - redesigned authmodal and landingpage
