@@ -9,6 +9,16 @@ All notable changes to OzMath will be documented in this file.
 ### Changes
 22/03/2025:
 - massive change to home page!
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/d1fa4b8a-8b46-4b75-8523-7f64cdb7cb7f" />
+
+  To
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/1276fa25-4165-4305-b997-60496c27b538" />
+
+
+- inspired by leetcode
+- fixed back arrow ending test in test mode
+
 
 
 18/03/2025:
