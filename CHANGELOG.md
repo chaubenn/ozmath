@@ -7,6 +7,11 @@ All notable changes to OzMath will be documented in this file.
 - Voice-to-text and drawing-to-text in written responses
 
 ### Changes
+24/03/2025:
+- fixed bugs in study plan
+- changed pricing and plans for ozpremium
+- slight optimisations to mobile view
+
 22/03/2025:
 - massive change to home page!
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/d1fa4b8a-8b46-4b75-8523-7f64cdb7cb7f" />
