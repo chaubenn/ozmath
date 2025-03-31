@@ -7,6 +7,10 @@ All notable changes to OzMath will be documented in this file.
 - Voice-to-text and drawing-to-text in written responses
 
 ### Changes
+
+01/04/2025:
+- busy week... just added a few problems to the database (finished paper1 2022)
+  
 24/03/2025:
 - fixed bugs in study plan
 - changed pricing and plans for ozpremium
