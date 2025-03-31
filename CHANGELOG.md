@@ -9,7 +9,8 @@ All notable changes to OzMath will be documented in this file.
 ### Changes
 
 01/04/2025:
-- busy week... just added a few problems to the database (finished paper1 2022)
+- busy week... added a few problems to the database (finished paper1 2022)
+- changed study plan design to dynamic sliding, fixed 
   
 24/03/2025:
 - fixed bugs in study plan
