@@ -8,6 +8,9 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+03/04/2025
+- slight about and landingpage changes
+
 01/04/2025:
 - busy week... added a few problems to the database (finished paper1 2022)
 - changed study plan design to dynamic sliding, fixed
