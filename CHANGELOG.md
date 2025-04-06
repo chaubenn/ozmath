@@ -7,7 +7,9 @@ All notable changes to OzMath will be documented in this file.
 - Voice-to-text and drawing-to-text in written responses
 
 ### Changes
-
+06/04/2025
+- finished 2022 paper & finalised marking solutions for all existing problems
+  
 03/04/2025
 - slight about and landingpage changes
 
