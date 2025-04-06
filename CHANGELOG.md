@@ -9,6 +9,7 @@ All notable changes to OzMath will be documented in this file.
 ### Changes
 06/04/2025
 - finished adding all problems from all 2022 papers & finalised marking solutions for all existing problems
+- fixed problemview bug showing grading solution
   
 03/04/2025
 - slight about and landingpage changes
