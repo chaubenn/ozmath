@@ -7,6 +7,11 @@ All notable changes to OzMath will be documented in this file.
 - Voice-to-text and drawing-to-text in written responses
 
 ### Changes
+08/04/2025-09/04/2025:
+- huge change to ui, using Shadcn's left sidebar instead of hard-coded topbar
+- using Shadcn Carousel for study planner and resizable for container resizing (so much more responsive on chrome now!)
+- known bugs to fix: resize tab for past tests is too high, going from friend's test to about/settings gives black screen (routing goes /methods/about instead of /about) 
+  
 07/04/2025 
 - finished tailoring 2023 Paper 1 written problem solutions
 - optimised solutionImage display
