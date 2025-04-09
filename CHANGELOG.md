@@ -6,11 +6,17 @@ All notable changes to OzMath will be documented in this file.
 - Corca.app in written responses once the application becomes open source.
 - Voice-to-text and drawing-to-text in written responses
 
+# Known bugs:
+- resize tab for past tests is too high
+- viewing friend's written solutions to past tests is only one-lined due to latex properties
+
+
 ### Changes
 08/04/2025-09/04/2025:
 - huge change to ui, using Shadcn's left sidebar instead of hard-coded topbar
 - using Shadcn Carousel for study planner and resizable for container resizing (so much more responsive on chrome now!)
-- known bugs to fix: resize tab for past tests is too high, going from friend's test to about/settings gives black screen (routing goes /methods/about instead of /about) 
+- fixed bug where if i were in specialist 'realm' and pressed another tab, it would return to methods realm automatically
+- fixed page handling for users viewing a friend's test
   
 07/04/2025 
 - finished tailoring 2023 Paper 1 written problem solutions
