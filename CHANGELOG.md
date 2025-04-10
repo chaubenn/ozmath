@@ -12,6 +12,13 @@ All notable changes to OzMath will be documented in this file.
 
 
 ### Changes
+
+10/04/2025:
+- exploring the the world of spline, framer and figma...
+- big landingpage revamp. mobile issues...
+- few bug fixes
+- framer being used to host ozmath.com, netlify for app.ozmath.com
+  
 08/04/2025-09/04/2025:
 - huge change to ui, using Shadcn's left sidebar instead of hard-coded topbar
 - using Shadcn Carousel for study planner and resizable for container resizing (so much more responsive on chrome now!)
