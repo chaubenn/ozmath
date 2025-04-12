@@ -6,13 +6,17 @@ All notable changes to OzMath will be documented in this file.
 - Corca.app in written responses once the application becomes open source.
 - Voice-to-text and drawing-to-text in written responses
 
-# Known bugs:
+# Known (hard to fix) bugs:
 - resize tab for past tests is too high
 - viewing friend's written solutions to past tests is only one-lined due to latex properties
 
 
 ### Changes
 
+12/04/2025:
+- fixed 90% of mobile compability (still dont recommend to use on mobile)
+- few landingpage updates to FAQ (mobile hamburger menu still not responsive)
+  
 10/04/2025:
 - exploring the the world of spline, framer and figma...
 - big landingpage revamp. mobile issues...
