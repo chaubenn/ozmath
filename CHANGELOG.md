@@ -15,7 +15,7 @@ All notable changes to OzMath will be documented in this file.
 
 12/04/2025:
 - fixed 90% of mobile compability (still dont recommend to use on mobile)
-- few landingpage updates to FAQ (mobile hamburger menu still not responsive)
+- few landingpage updates to FAQ + adding media (mobile hamburger menu still not responsive)
   
 10/04/2025:
 - exploring the the world of spline, framer and figma...
