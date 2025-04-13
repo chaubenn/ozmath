@@ -13,6 +13,12 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+14/04/2025:
+- simplified landingpage
+- added pre 'choose your subject' page to direct from app.ozmath.com to app.ozmath.com/methods, app.ozmath.com/specialist etc. 
+![image](https://github.com/user-attachments/assets/af11c0d4-bc1e-4b5d-864f-34bbae4029c7)
+
+
 12/04/2025:
 - fixed 90% of mobile compability (still dont recommend to use on mobile)
 - few landingpage updates to FAQ + adding media (mobile hamburger menu still not responsive)
