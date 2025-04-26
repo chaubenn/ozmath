@@ -13,6 +13,9 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+25/04/2025:
+- finished methods 2022 TA 
+
 14/04/2025:
 - simplified landingpage
 - added pre 'choose your subject' page to direct from app.ozmath.com to app.ozmath.com/methods, app.ozmath.com/specialist etc. 
