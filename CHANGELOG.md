@@ -10,11 +10,18 @@ All notable changes to OzMath will be documented in this file.
 - resize tab for past tests is too high
 - viewing friend's written solutions to past tests is only one-lined due to latex properties
 
+# Upcoming
+- New logo concepts (8th May)
+- Lightboard (bought & shipping, TBD) for videos 
+
 
 ### Changes
 
+04/05/2024:
+- specialist 2024 paper 1 multi choice finalised
+
 25/04/2025:
-- finished methods 2022 TA 
+- finished methods 2021-2023 entirely
 
 14/04/2025:
 - simplified landingpage
