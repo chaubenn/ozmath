@@ -158,7 +158,7 @@ All notable changes to OzMath will be documented in this file.
 - Added GitHub icon and link to About page
 - Implemented themes entirely
 
-### Known Bugs 
+### Known Bugs (all fixed as of 13.01.25)
 - Test does not save unless 'Return to problems' is clicked
 - Video solution not available for viewing past tests from user or friends
 - Back arrow in tests instantly ends test
