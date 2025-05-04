@@ -17,6 +17,11 @@ All notable changes to OzMath will be documented in this file.
 
 ### Changes
 
+05/05/2024:
+- specialist 2024 paper 1 written problems finalised
+- minor UI-padding related UI change: <img width="1567" alt="image" src="https://github.com/user-attachments/assets/186a3027-98e2-496c-bd8e-d5362c65a992" /> to <img width="1567" alt="image" src="https://github.com/user-attachments/assets/7e3197b6-3ca7-4eab-b11f-eda2c21f9514" />
+
+
 04/05/2024:
 - specialist 2024 paper 1 multi choice finalised
 
