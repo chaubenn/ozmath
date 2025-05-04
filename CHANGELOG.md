@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to OzMath will be documented in this file.
+All notable announcements/updates to OzMath will be documented in this file.
 
 # To be integrated:
 - Corca.app in written responses once the application becomes open source.
