@@ -12,6 +12,7 @@ All notable changes to OzMath will be documented in this file.
 
 # Upcoming
 - New logo concepts (8th May)
+- Merch (post-logo updates)
 - Lightboard (bought & shipping, TBD) for videos 
 
 
