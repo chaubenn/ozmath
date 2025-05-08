@@ -11,20 +11,24 @@ All notable announcements/updates to OzMath will be documented in this file.
 - viewing friend's written solutions to past tests is only one-lined due to latex properties
 
 # Upcoming
-- New logo concepts (8th May)
-- Merch (post-logo updates)
-- Lightboard (bought & shipping, TBD) for videos
 - Advertising, partnerships, pitches (mid-May to early June)
 
 
 ### Changes
 
-05/05/2024:
+08/05/2025:
+- new logos finalised and implemented, linkedin company update 
+- adding specialist problems 
+- lightboard arrived! merch (tshirts, hoodies) arriving in 1-2 weeks
+- backdrop arriving within next few day
+- video recordings to begin after merch arrives
+
+05/05/2025:
 - specialist 2024 paper 1 written problems finalised
 - minor UI-padding related UI change: <img width="1567" alt="image" src="https://github.com/user-attachments/assets/186a3027-98e2-496c-bd8e-d5362c65a992" /> to <img width="1567" alt="image" src="https://github.com/user-attachments/assets/7e3197b6-3ca7-4eab-b11f-eda2c21f9514" />
 
 
-04/05/2024:
+04/05/2025:
 - specialist 2024 paper 1 multi choice finalised
 
 25/04/2025:
