@@ -20,7 +20,7 @@ All notable announcements/updates to OzMath will be documented in this file.
 - new logos finalised and implemented, linkedin company update 
 - adding specialist problems 
 - lightboard arrived! merch (tshirts, hoodies) arriving in 1-2 weeks
-- backdrop arriving within next few day
+- backdrop arriving within next few days
 - video recordings to begin after merch arrives
 
 05/05/2025:
