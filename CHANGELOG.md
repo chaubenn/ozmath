@@ -16,6 +16,10 @@ All notable announcements/updates to OzMath will be documented in this file.
 
 ### Changes
 
+09/05/2025:
+- updated favicons
+- improved page routing/refresh handling (used to be /methods, /specialist only - now /methods/{problemid} used)
+
 08/05/2025:
 - new logos finalised and implemented, linkedin company update 
 - adding specialist problems 
